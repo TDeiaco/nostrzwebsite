@@ -1,1 +1,98 @@
-<h1>no_strz Website!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no_strz | Official Website</title>
+
+    <meta name="description" content="no_strz band, a rock and roll band out of LA">
+    
+    <meta property="og:url" content="https://nostrz.com">
+    <meta property="og:image" content="URL_to_your_image.jpg">
+    <meta property="og:title" content="no_strz band">
+    <meta property="og:description" content="no_strz band">
+
+    <meta name="twitter:site" content="@no_strz">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="canonical" href="https://nostrz.com">
+
+
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- Navigation bar with links to different sections of the website -->
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Band Biography Section -->
+        <section id="bio">
+            <h2>About no_strz</h2>
+            <p><!-- Band biography goes here --></p>
+        </section>
+
+        <!-- Tour Dates Section -->
+        <section id="tour">
+            <h2>Tour Dates</h2>
+            <ul>
+                <!-- List tour dates here -->
+            </ul>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music">
+            <h2>Music</h2>
+            <!-- Embed music player or links to music -->
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <!-- Photo and video gallery -->
+        </section>
+
+        <!-- Merchandise Section -->
+        <section id="merch">
+            <h2>Merchandise</h2>
+            <!-- Merchandise items and purchase links -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <!-- Contact form or information -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 no_strz. All rights reserved.</p>
+        <!-- Social media links and additional info -->
+    </footer>
+
+      <!-- this type of cache busting will be fine for my small CSS file.  it WILL force broswers to DL the CSS file every page reload, but that shouldn't matter for this
+    size of CSS file -->
+    <script>
+        var uniqueNum = new Date().getTime();
+        var cssURL = 'site.css?ver=' + uniqueNum;
+        var cssElement=document.createElement('link')
+        cssElement.setAttribute('rel','stylesheet')
+        cssElement.setAttribute('type','text/css')
+        cssElement.setAttribute('href', cssURL);
+        document.getElementsByTagName("head")[0].appendChild(cssElement);
+    </script>
+</body>
+</html>
