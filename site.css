@@ -1,56 +1,98 @@
-    /* General Styles */
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #111;
-        color: #ddd;
-        margin: 0;
-        padding: 0;
-    }
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
 
-    header, footer {
-        background-color: #222;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-    }
+/* Full Page Section Styles */
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    scroll-snap-align: start;
+}
 
-    /* Navigation Bar Styles */
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
+/* Background Image Styles */
+.bg-img-1, .bg-img-2, .bg-img-3, .bg-img-4, .bg-img-5 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 
+/* Sample Background Images - Replace with actual URLs */
+.bg-img-1 { background-image: url('images/fasivAlbumCover.jpg'); }
+.bg-img-2 { background-image: url('images/rideAlbumCover.jpg'); }
+.bg-img-3 { background-image: url('images/milesFrankRecording.jpg'); }
+.bg-img-4 { background-image: url('images/frank.jpg'); }
+.bg-img-5 { background-image: url('path-to-image-5.jpg'); }
+
+/* Content Styling */
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+nav ul li a:hover, 
+a:hover {
+    color: #f0a;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for Video Container */
+.video-container {
+    text-align: center;
+}
+
+/* Responsive Video Styling */
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
     nav ul li {
-        display: inline;
-        margin-right: 20px;
+        display: block;
+        margin-bottom: 5px;
     }
-
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    /* Section Styles */
-    section {
-        padding: 20px;
-        border-bottom: 1px solid #333;
-    }
-
-    h2 {
-        color: #e3e3e3;
-    }
-
-    /* Hover effects */
-    nav ul li a:hover, 
-    a:hover {
-        color: #f0a;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 600px) {
-        nav ul li {
-            display: block;
-            margin-bottom: 5px;
-        }
-    }
+}
